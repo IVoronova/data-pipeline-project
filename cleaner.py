@@ -27,6 +27,9 @@ print("Survival Rate of Women:", np.round(data['Survived'][data['Sex'] == "femal
 print("Survival Rate of Men:", np.round(data['Survived'][data['Sex'] == "male"].mean() * 100, 1), "%")  
 print("Oldest Passenger Age:", data['Age'].max())
 print("Youngest Passenger Age:", data['Age'].min())
+print("Average Age of Survivors:", np.round(data['Age'][data['Survived'] == 1].mean(), 1))
+print("Average Age of Non-Survivors:", np.round(data['Age'][data['Survived'] == 0].mean(), 1))
+
 
 # Survival count bar chart
 data['Survived'].value_counts().plot(kind='bar', color=['red', 'green'])
