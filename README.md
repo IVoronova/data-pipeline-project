@@ -10,3 +10,8 @@
 ## Libraries used
  - Pandas
  - NumPy
+
+## How to Run
+```bash
+python cleaner.py
+```
