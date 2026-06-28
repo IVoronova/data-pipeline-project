@@ -5,7 +5,7 @@
 ## What it does
  - Loads the Titanic Dataset
  - Identified missing values across all columns
- - Cleans data by filling missing afes wutg median and dropping sparse colums
+ - Cleans data by filling missing ages with median and dropping sparse columns
   
 ## Libraries used
  - Pandas

@@ -13,6 +13,11 @@ print(data.head())
 print("\nMissing values in each column:")
 print(data.isnull().sum())
 
+# Clean the dataset
+data["Age"] = data["Age"].fillna(data["Age"].median())
+data = data.drop(columns=["Cabin"])
+data = data.dropna()
+
 print("\n--- Dataset Stats --- ")
 print("Average Age:", np.round(data['Age'].mean(), 1))
 print("Average Fare:", np.round(data['Fare'].mean(), 2))
